@@ -35,7 +35,9 @@ Using the Validator middleware we can simply call the ValidateSchema function on
 
 func UserRoutes(router fiber.Router){
 
-router.Post("/myRoute", func(c *fiber.Ctx) error {return ValidateSchema(c, CreateUserValidator{})} ,func create(){ // logic here})}
+router.Post("/myRoute", 
+	func(c *fiber.Ctx) error {return ValidateSchema(c, CreateUserValidator{})} ,
+	func create(){ // logic here})}
 
 ```
 
