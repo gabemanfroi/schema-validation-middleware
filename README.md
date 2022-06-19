@@ -38,6 +38,6 @@ func UserRoutes(router fiber.Router){
 router.Post("/myRoute", 
 	func(c *fiber.Ctx) error {return ValidateSchema(c, CreateUserValidator{})} ,
 	func create(){ // logic here})}
-
+}
 ```
 
